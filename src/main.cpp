@@ -1,4 +1,4 @@
-#include "gtesr/gtest.h"
+#include "gtest/gtest.h"
 #include "../tests/test.cpp"
 #include "../header/rectangle.hpp"
 
