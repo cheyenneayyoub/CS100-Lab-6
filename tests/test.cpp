@@ -30,7 +30,7 @@ TEST(AreaTest, Negative){
         Rectangle r;
         r.set_width(-2);
         r.set_height(3);
-        EXPECT_THROW(r.area(), invalid_argument);
+        EXPECT_EQ(0, r.area());
 }
 
 TEST(AreaTest, Zero){
@@ -44,21 +44,21 @@ TEST(PerimTest, Positive){
 	Rectangle r;
 	r.set_width(2);
 	r.set_height(3);
-	EXPECT_EQ(10, r.perimiter());
+	EXPECT_EQ(10, r.perimeter());
 }
 
 TEST(PerimTest, Negative){
 	Rectangle r;
 	r.set_width(2);
 	r.set_height(-3);
-	EXPECT_THROW(r.perimiter(), invalid_argument);
+	EXPECT_EQ(0, r.perimeter());
 }
 
 TEST(PerimTest, Zero){
 	Rectangle r;
 	r.set_width(0);
 	r.set_height(0);
-	EXPECT_EQ(0, r.perimiter());
+	EXPECT_EQ(0, r.perimeter());
 }
 
 int main(int argc, char** argv) {
