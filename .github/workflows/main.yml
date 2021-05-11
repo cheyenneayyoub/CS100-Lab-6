@@ -34,3 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          
+          cmake .
+             echo --- Completed cmake .
+          make
+             echo --- Completed make
+          ./test
+             echo --- Ran test executable  
