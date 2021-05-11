@@ -1,4 +1,4 @@
-nclude "../header/rectangle.hpp"
+#include "../header/rectangle.hpp"
 
 Rectangle::Rectangle() : width(0), height(0) {}
 
